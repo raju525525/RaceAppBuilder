@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Apache Olingo - OData2 Library</title>
+<style type="text/css">
+body { font-family: Arial, sans-serif; font-size: 13px; line-height: 18px;
+       color: blue; background-color: #ffffff; }
+a { color: blue; text-decoration: none; }
+a:focus { outline: thin dotted #4076cb; outline-offset: -1px; }
+a:hover, a:active { outline: 0; }
+a:hover { color: #404a7e; text-decoration: underline; }
+h1, h2, h3, h4, h5, h6 { margin: 9px 0; font-family: inherit; font-weight: bold;
+                         line-height: 1; color: blue; }
+h1 { font-size: 36px; line-height: 40px; }
+h2 { font-size: 30px; line-height: 40px; }
+h3 { font-size: 24px; line-height: 40px; }
+h4 { font-size: 18px; line-height: 20px; }
+h5 { font-size: 14px; line-height: 20px; }
+h6 { font-size: 12px; line-height: 20px; }
+.logo { float: right; }
+ul { padding: 0; margin: 0 0 9px 25px; }
+ul ul { margin-bottom: 0; }
+li { line-height: 18px; }
+hr { margin: 18px 0;
+     border: 0; border-top: 1px solid #cccccc; border-bottom: 1px solid #ffffff; }
+table { border-collapse: collapse; border-spacing: 10px; }
+th, td { border: 1px solid; padding: 20px; }
+.code { font-family: "Courier New", monospace; font-size: 13px; line-height: 18px; }
+</style>
+</head>
+<body>
+	<h1>Apache Olingo - Java OData2 in Spring Boot and JPA</h1>
+	<hr />
+	<table>
+		<tr>
+			<td valign="top">
+				<h3>Service Document and Metadata</h3>
+				<ul>
+					<li><a href="odata.svc/$metadata" target="_blank">metadata</a></li>
+				</ul>
+				<h3>EntitySets</h3>
+				<ul>
+					<li><a href="odata.svc/AppConfigs" target="_blank">AppConfigs</a></li>
+					<li><a href="odata.svc/Members" target="_blank">Members</a></li>
+					<li><a href="odata.svc/AppConfigs?$filter=AppID eq 'WorkOrder'" 
+                 target="_blank">AppConfigs/AppID eq 'WorkOrder'</a></li>
+        </ul>
+				<h3>Entities</h3>
+				<ul>
+					<li><a href="odata.svc/AppConfigs(AppID='Raju',Uname='Bauer',CustomerID='Bauer')" 
+					target="_blank">AppConfigs(AppID='Raju',Uname='Bauer',CustomerID='Bauer')</a></li>
+					<li><a href="odata.svc/Members(1)" target="_blank">Members(1)</a></li>
+        </ul>
+			</td>
+			<td valign="top">
+				&nbsp;
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
